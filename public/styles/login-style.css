@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
@@ -8,8 +8,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  
-  
 }
 
 nav {
@@ -84,7 +82,7 @@ a {
   font-weight: bolder;
   left: 100px;
   top: 20px;
-  background:transparent;
+  background: transparent;
   border: 2px solid #ffffff;
   cursor: pointer;
   color: black;
@@ -94,7 +92,6 @@ a {
   background: #1d55f0;
   border: 2px solid #c1c1c1;
   transition: all 0.5s ease;
-  
 }
 
 form {
@@ -113,10 +110,21 @@ form {
   margin: 0 auto;
 }
 
+.modal input[type="text"],
+.modal input[type="email"], 
+.modal input[type="password"],
+.modal input[type="date"] {
+  width: 60%;
+  padding: 0.4em 2em 0.4em 0.4em;
+  border: 1px solid #3300ff;
+  box-shadow: 02px 02px 02px rgba(0, 0, 0, 0.2);
+  border-radius: 05px;
+  margin: 0 0 10px 0;
+}
+
 .apresentacao img {
   position: relative;
   right: -10px;
-  
 }
 
 .modal-container {
@@ -131,7 +139,6 @@ form {
 
 .modal-container.ativo {
   display: block;
-  
 }
 
 .modal {
@@ -144,13 +151,27 @@ form {
   text-align: center;
 }
 
+.modal label {
+  display: block;
+  margin-bottom: 0, 1em;
+  color: #a5a5a5;
+}
+
 .btn-open-modal {
   color: rgb(46, 46, 173) !important;
 }
 
 fieldset {
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
+  border: none;
+}
+
+.campo-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 01em;
 }
 
 .ativo .modal {
@@ -161,7 +182,7 @@ fieldset {
   width: 15%;
   height: 100%;
   border: 2px solid rgb(8, 47, 221);
-  background:rgb(8, 47, 221);
+  background: rgb(8, 47, 221);
   color: #fff;
   outline: none;
   font-size: 20px;
@@ -171,10 +192,9 @@ fieldset {
   transition: all 0.3s ease;
   margin-top: 5px;
   margin-left: 15px;
-  
 }
 
-.btn:hover{
+.btn:hover {
   color: rgb(0, 0, 0);
   background: none;
 }
